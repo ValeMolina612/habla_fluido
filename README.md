@@ -52,8 +52,6 @@ node --test
 flutter run
 ```
 
-Sin configuración adicional, la aplicación utiliza el tutor simulado y no genera costos.
-
 ## Ejecutar con el proxy local
 
 En una primera terminal:
