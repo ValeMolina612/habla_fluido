@@ -1,9 +1,21 @@
 # Habla Fluido
 
+### pubspec.yaml
+<img width="1517" height="858" alt="image" src="https://github.com/user-attachments/assets/95081446-c70d-48be-a348-808a090c8c91" />
 
-### Fase roja real
+### reglas
+ <img width="1508" height="947" alt="image" src="https://github.com/user-attachments/assets/271b0c26-d18a-4698-aa1d-1b60072697c1" />
 
-.
+
+### nivel 
+<img width="1508" height="947" alt="image" src="https://github.com/user-attachments/assets/ef17098b-01d3-4201-9022-f056feb3ab20" />
+
+### exception 
+<img width="1467" height="932" alt="image" src="https://github.com/user-attachments/assets/e835930c-fb1b-4a3d-9fff-be8fb7ec2b1b" />
+
+
+### Fase roja 
+
 
 ![Fase roja real en Visual Studio Code](docs/capturas/01-fase-roja-real.png)
 
@@ -15,17 +27,6 @@
 
 
 ![12 pruebas Node aprobadas en Visual Studio Code](docs/capturas/03-fase-verde-proxy-real.png)
-
-## Pruebas incluidas
-
-| Archivo | Cobertura principal |
-|---|---|
-| `test/comparador_test.dart` | Normalización, Levenshtein, similitud, palabras correctas, parecidas, sustituidas, omitidas y sobrantes. |
-| `test/repaso_progreso_test.dart` | SM-2, fechas, calidad, tarjetas, promedio móvil, racha, nivel y plan diario. |
-| `test/tutor_test.dart` | JSON no confiable, tutor simulado, HTTPS, historial, UTF-8 y errores seguros. |
-| `test/vms_test.dart` | Pronunciación, dictado, lectura, escritura, conversación, persistencia y repaso. |
-| `test/widget_test.dart` | Inicio real de la aplicación y contenido principal de la pantalla. |
-| `proxy/test/proxy.test.js` | Prompt, inyección, validación, proveedor de IA, códigos HTTP, rate limit y token. |
 
 
 
