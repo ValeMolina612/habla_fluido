@@ -19,6 +19,10 @@ test('prompt: nivel o modo inválido lanza', () => {
   assert.throws(() => construirPrompt({ nivel: 'a1', modo: 'hackear' }));
 });
 test('solicitud válida pasa', () => assert.strictEqual(validarSolicitud(ok), null));
+test('solicitud: ignora espacios exteriores al medir el límite', () => {
+  const contenido = `  ${'a'.repeat(500)}  `;
+  assert.strictEqual(validarSolicitud({ ...ok, mensajes: [{ rol: 'user', contenido }] }), null);
+});
 test('solicitud: rechaza nivel, mensajes vacíos, texto largo y roles mal alternados', () => {
   assert.ok(validarSolicitud({ ...ok, nivel: 'x' }));
   assert.ok(validarSolicitud({ ...ok, mensajes: [] }));

@@ -9,6 +9,9 @@ void main() {
       expect(normalizar("Don't worry, be HAPPY!"), ["don't", 'worry', 'be', 'happy']);
     });
     test('apóstrofo tipográfico', () => expect(normalizar('don’t'), ["don't"]));
+    test('acentos prestados se comparan como letras simples', () {
+      expect(normalizar('Café naïve'), ['cafe', 'naive']);
+    });
     test('espacios múltiples y vacío', () {
       expect(normalizar('  a   b  '), ['a', 'b']);
       expect(normalizar(''), isEmpty);

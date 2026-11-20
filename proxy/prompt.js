@@ -49,7 +49,7 @@ function validarSolicitud(body) {
   for (let i = 0; i < m.length; i++) {
     const x = m[i];
     if (!x || (x.rol !== 'user' && x.rol !== 'assistant')) return 'rol inválido';
-    if (typeof x.contenido !== 'string' || x.contenido.trim() === '' || x.contenido.length > MAX_CARACTERES) {
+    if (typeof x.contenido !== 'string' || x.contenido.trim() === '' || x.contenido.trim().length > MAX_CARACTERES) {
       return 'contenido inválido';
     }
     // La API exige alternar roles empezando por el estudiante.

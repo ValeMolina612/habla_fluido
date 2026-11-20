@@ -42,6 +42,13 @@ class ResultadoComparacion {
 List<String> normalizar(String texto) => texto
     .toLowerCase()
     .replaceAll('’', "'")
+    .replaceAll(RegExp('[áàäâã]'), 'a')
+    .replaceAll(RegExp('[éèëê]'), 'e')
+    .replaceAll(RegExp('[íìïî]'), 'i')
+    .replaceAll(RegExp('[óòöôõ]'), 'o')
+    .replaceAll(RegExp('[úùüû]'), 'u')
+    .replaceAll('ñ', 'n')
+    .replaceAll('ç', 'c')
     .replaceAll(RegExp(r"[^a-z0-9'\s]"), ' ')
     .split(RegExp(r'\s+'))
     .where((s) => s.isNotEmpty)
