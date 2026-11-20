@@ -70,8 +70,3 @@ flutter run --dart-define=TUTOR_URL=http://10.0.2.2:8787/tutor --dart-define=TUT
 
 `10.0.2.2` permite que el emulador Android se conecte con el servidor que se ejecuta en la computadora. La llave de la API permanece únicamente en el proxy y nunca debe guardarse en Flutter ni en Git.
 
-## Permisos móviles
-
-Android utiliza permisos de Internet y micrófono. iOS necesita descripciones para el uso del micrófono y el reconocimiento de voz. El audio puede ser procesado por el servicio de voz del sistema, por lo que la aplicación debe informar esta condición al estudiante.
-
-
