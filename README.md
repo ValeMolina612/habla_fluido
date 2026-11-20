@@ -151,39 +151,7 @@ Se ejecutan las 13 pruebas del proxy: prompt, validación, seguridad, servidor, 
 
 Total comprobado: **93 pruebas** — 80 de Flutter y 13 del proxy.
 
-## Ejecutar las pruebas
 
-Desde la carpeta principal:
-
-```powershell
-flutter pub get
-flutter test
-```
-
-Para el proxy:
-
-```powershell
-cd proxy
-node --test
-```
-
-## Ejecutar la aplicación sin IA externa
-
-```powershell
-flutter run
-```
-
-## Ejecutar con el proxy local
-
-En una primera terminal:
-
-```powershell
-cd C:\Users\12251\Downloads\habla_fluido\proxy
-$env:ANTHROPIC_API_KEY="tu_llave"
-node server.js
-```
-
-En otra terminal, desde la carpeta principal:
 
 ```powershell
 flutter run --dart-define=TUTOR_URL=http://10.0.2.2:8787/tutor --dart-define=TUTOR_LOCAL=true
